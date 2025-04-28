@@ -26,10 +26,10 @@ const PricingCard = ({ activePkg, setActivePackage, activePackage }) => (
       rel="noopener noreferrer"
       className="block text-center bg-blue-500 text-white py-2 px-6 rounded-tl-[16px] rounded-br-[16px] hover:bg-blue-600 transition glass text-sm font-semibold"
     >
-      Buy
+      Beli
     </a>
     <div className="flex justify-center gap-2 mt-3">
-      {["Online Business Setup", "Website", "Join Reseller"].map((pkg) => (
+      {["Pembuatan Bisnis Online", "Website", "Gabung Reseller"].map((pkg) => (
         <button
           key={pkg}
           onClick={() => setActivePackage(pkg)}
@@ -46,23 +46,25 @@ const PricingCard = ({ activePkg, setActivePackage, activePackage }) => (
 
 // Komponen Home
 const Home = () => {
-  const [activePackage, setActivePackage] = useState("Online Business Setup");
+  const [activePackage, setActivePackage] = useState("Pembuatan Bisnis Online");
 
   const infoGridItems = useMemo(
     () => [
       {
-        title: "Proven Success Rate",
-        description:
-          "Most of our users successfully launch their online businesses with NolanDex, backed by real customer success stories",
-      },
-      {
-        title: "Fast Setup",
-        description: "Full setup completed within a few working hours — fast, professional, and ready to sell.",
-      },
-      {
-        title: "Risk-Free Guarantee",
-        description: "50% money-back guarantee if your business doesn't grow within 30 days.",
-      },
+basics
+        {
+          title: "Tingkat Keberhasilan Terbukti",
+          description:
+            "Sebagian besar pengguna kami berhasil meluncurkan bisnis online mereka dengan NolanDex, didukung oleh kisah sukses pelanggan nyata",
+        },
+        {
+          title: "Pengaturan Cepat",
+          description: "Pengaturan lengkap selesai dalam beberapa jam kerja — cepat, profesional, dan siap jual.",
+        },
+        {
+          title: "Jaminan Tanpa Risiko",
+          description: "Jaminan uang kembali 50% jika bisnis Anda tidak berkembang dalam 30 hari.",
+        },
     ],
     []
   );
@@ -70,45 +72,45 @@ const Home = () => {
   const pricingPackages = useMemo(
     () => [
       {
-        name: "Online Business Setup",
-        price: "$20",
-        description: "Ideal for individuals or small businesses looking to set up their online presence",
+        name: "Pembuatan Bisnis Online",
+        price: "Rp50.000",
+        description: "Ideal untuk individu atau bisnis kecil yang ingin membangun kehadiran online mereka",
         features: [
-          "Full online business setup",
+          "Pengaturan bisnis online lengkap",
           "Website",
-          "Social media booster",
-          "Basic chatbot integration",
-          "Social media content",
+          "Peningkat media sosial",
+          "Integrasi chatbot dasar",
+          "Konten media sosial",
         ],
         whatsappLink:
-          "https://wa.me/6285156779923?text=Hello,%20I'm%20interested%20in%20the%20Online%20Business%20Setup%20package.%20Can%20you%20provide%20more%20details?",
+          "https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20paket%20Pembuatan%20Bisnis%20Online.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut?",
       },
       {
         name: "Website",
-        price: "$10",
-        description: "Perfect for businesses ready to establish a professional website and digital presence",
+        price: "Rp25.000",
+        description: "Sempurna untuk bisnis yang siap membangun website profesional dan kehadiran digital",
         features: [
-          "E-commerce websites",
-          "Portfolio websites",
-          "Landing pages",
-          "Membership/community websites",
-          "Free domain + unlimited hosting",
+          "Website e-commerce",
+          "Website portofolio",
+          "Landing page",
+          "Website keanggotaan/komunitas",
+          "Domain gratis + hosting tak terbatas",
         ],
         whatsappLink:
-          "https://wa.me/6285156779923?text=Hello,%20I'm%20interested%20in%20the%20Website%20package.%20Can%20you%20provide%20more%20details?",
+          "https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20paket%20Website.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut?",
       },
       {
-        name: "Join Reseller",
-        price: "$0",
-        description: "For businesses ready to expand with no upfront cost.",
+        name: "Gabung Reseller",
+        price: "Gratis",
+        description: "Untuk bisnis yang siap berkembang tanpa biaya awal.",
         features: [
-          "Everything in Website",
-          "Full support until you get your first customer",
-          "Reseller program integration (Free)",
-          "Access to exclusive marketing resources and tools",
+          "Semua fitur di paket Website",
+          "Dukungan penuh hingga Anda mendapatkan pelanggan pertama",
+          "Integrasi program reseller (Gratis)",
+          "Akses ke sumber daya dan alat pemasaran eksklusif",
         ],
         whatsappLink:
-          "https://wa.me/6285156779923?text=Hello,%20I'm%20interested%20in%20the%20Join%20Reseller%20package.%20Can%20you%20provide%20more%20details?",
+          "https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20paket%20Gabung%20Reseller.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut?",
       },
     ],
     []
@@ -121,8 +123,7 @@ const Home = () => {
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease kteruskan kode tanpa perubahan pada bagian yang tidak disebutkan:
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -136,18 +137,18 @@ const Home = () => {
       <section id="home" className="min-h-screen flex items-center relative z-10 pt-32 pb-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            We Create <br />
-            <span className="text-gray-400">You Launch and Earn</span>
+            Kami Membuat <br />
+            <span className="text-gray-400">Anda Meluncurkan dan Menghasilkan</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
-            Ready to launch your business? With our complete setup service, you can focus on growth while we handle the hard work.
+            Siap meluncurkan bisnis Anda? Dengan layanan pengaturan lengkap kami, Anda bisa fokus pada pertumbuhan sementara kami menangani pekerjaan sulit.
           </p>
           <div className="flex justify-center gap-4 mb-12">
             <button
               onClick={() => scrollToSection("pricing")}
               className="glass px-8 py-4 text-white font-semibold rounded-tl-[20px] rounded-br-[20px] hover:bg-gray-100 hover:text-black transition"
             >
-              Buy
+              Beli
             </button>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
@@ -163,9 +164,9 @@ const Home = () => {
             viewport={{ once: true }}
             variants={sectionVariants}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Choose Your Plan</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Pilih Paket Anda</h2>
             <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-              Clear Pricing, Big Results. Get everything you need, at the right price.
+              Harga Jelas, Hasil Besar. Dapatkan semua yang Anda butuhkan, dengan harga yang tepat.
             </p>
             <PricingCard activePkg={activePkg} setActivePackage={setActivePackage} activePackage={activePackage} />
           </motion.div>
