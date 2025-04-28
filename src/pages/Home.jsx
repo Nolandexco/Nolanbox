@@ -24,7 +24,7 @@ const PricingCard = ({ activePkg, setActivePackage, activePackage }) => (
       href={activePkg.whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="block text-center bg-blue-500 text-white py-2 px-6 rounded-tl-[16px] rounded-br-[16px] hover:bg-blue-600 transition glass text-sm font-semibold"
+      className="block text-center bg-blue-500 text-white py-2 px-6 rounded-tl-[16px] rounded-br-[16px] hover:bg-blue-600 transition text-sm font-semibold"
     >
       Beli
     </a>
@@ -75,7 +75,7 @@ const Home = () => {
         features: [
           "Bikin bisnis online lengkap",
           "Website",
-          "Peningkatannmedia sosial",
+          "Peningkatan media sosial",
           "Chatbot sederhana",
           "Konten untuk media sosial",
         ],
@@ -119,8 +119,8 @@ const Home = () => {
   );
 
   const sectionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    hidden: { opacity: 0, y: 20 }, // Reduced y translation for smoother animation
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }, // Faster duration
   };
 
   const scrollToSection = (sectionId) => {
@@ -144,7 +144,7 @@ const Home = () => {
           <div className="flex justify-center gap-4 mb-12">
             <button
               onClick={() => scrollToSection("pricing")}
-              className="glass px-8 py-4 text-white font-semibold rounded-tl-[20px] rounded-br-[20px] hover:bg-gray-100 hover:text-black transition"
+              className="px-8 py-4 text-white font-semibold rounded-tl-[20px] rounded-br-[20px] bg-blue-500 hover:bg-blue-600 transition"
             >
               Beli
             </button>
