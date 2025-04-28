@@ -118,9 +118,10 @@ const Home = () => {
     [activePackage, pricingPackages]
   );
 
+  // Simplified animation to reduce performance impact
   const sectionVariants = {
-    hidden: { opacity: 0, y: 20 }, // Reduced y translation for smoother animation
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }, // Faster duration
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 0.5, ease: "easeOut" } },
   };
 
   const scrollToSection = (sectionId) => {
