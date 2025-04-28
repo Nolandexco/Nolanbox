@@ -51,20 +51,18 @@ const Home = () => {
   const infoGridItems = useMemo(
     () => [
       {
-basics
-        {
-          title: "Tingkat Keberhasilan Terbukti",
-          description:
-            "Sebagian besar pengguna kami berhasil meluncurkan bisnis online mereka dengan NolanDex, didukung oleh kisah sukses pelanggan nyata",
-        },
-        {
-          title: "Pengaturan Cepat",
-          description: "Pengaturan lengkap selesai dalam beberapa jam kerja — cepat, profesional, dan siap jual.",
-        },
-        {
-          title: "Jaminan Tanpa Risiko",
-          description: "Jaminan uang kembali 50% jika bisnis Anda tidak berkembang dalam 30 hari.",
-        },
+        title: "Tingkat Keberhasilan Terbukti",
+        description:
+          "Sebagian besar pengguna kami berhasil meluncurkan bisnis online mereka dengan NolanDex, didukung oleh kisah sukses pelanggan nyata",
+      },
+      {
+        title: "Pengaturan Cepat",
+        description: "Pengaturan lengkap selesai dalam beberapa jam kerja — cepat, profesional, dan siap jual.",
+      },
+      {
+        title: "Jaminan Tanpa Risiko",
+        description: "Jaminan uang kembali 50% jika bisnis Anda tidak berkembang dalam 30 hari.",
+      },
     ],
     []
   );
@@ -123,7 +121,8 @@ basics
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease kteruskan kode tanpa perubahan pada bagian yang tidak disebutkan:
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
