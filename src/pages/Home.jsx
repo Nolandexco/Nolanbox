@@ -29,7 +29,7 @@ const PricingCard = ({ activePkg, setActivePackage, activePackage }) => (
       Beli
     </a>
     <div className="flex justify-center gap-2 mt-3">
-      {["Pembuatan Bisnis Online", "Website", "Gabung Reseller"].map((pkg) => (
+      {["Bisnis Online", "Website", "Jadi Reseller"].map((pkg) => (
         <button
           key={pkg}
           onClick={() => setActivePackage(pkg)}
@@ -46,22 +46,21 @@ const PricingCard = ({ activePkg, setActivePackage, activePackage }) => (
 
 // Komponen Home
 const Home = () => {
-  const [activePackage, setActivePackage] = useState("Pembuatan Bisnis Online");
+  const [activePackage, setActivePackage] = useState("Bisnis Online");
 
   const infoGridItems = useMemo(
     () => [
       {
-        title: "Tingkat Keberhasilan Terbukti",
-        description:
-          "Sebagian besar pengguna kami berhasil meluncurkan bisnis online mereka dengan NolanDex, didukung oleh kisah sukses pelanggan nyata",
+        title: "Banyak yang Sukses",
+        description: "Banyak pelanggan kami berhasil mulai bisnis online dengan NolanDex, terbukti dari cerita nyata mereka.",
       },
       {
-        title: "Pengaturan Cepat",
-        description: "Pengaturan lengkap selesai dalam beberapa jam kerja — cepat, profesional, dan siap jual.",
+        title: "Cepat Jadi",
+        description: "Bisnis Anda siap dalam beberapa jam, rapi dan langsung bisa jualan.",
       },
       {
-        title: "Jaminan Tanpa Risiko",
-        description: "Jaminan uang kembali 50% jika bisnis Anda tidak berkembang dalam 30 hari.",
+        title: "Aman, Tidak Rugi",
+        description: "Kami kembalikan 50% uang Anda jika bisnis tidak berkembang dalam 30 hari.",
       },
     ],
     []
@@ -70,45 +69,45 @@ const Home = () => {
   const pricingPackages = useMemo(
     () => [
       {
-        name: "Pembuatan Bisnis Online",
+        name: "Bisnis Online",
         price: "Rp50.000",
-        description: "Ideal untuk individu atau bisnis kecil yang ingin membangun kehadiran online mereka",
+        description: "Cocok untuk Anda yang ingin mulai jualan online dengan mudah.",
         features: [
-          "Pengaturan bisnis online lengkap",
+          "Bikin bisnis online lengkap",
           "Website",
-          "Peningkat media sosial",
-          "Integrasi chatbot dasar",
-          "Konten media sosial",
+          "Peningkatannmedia sosial",
+          "Chatbot sederhana",
+          "Konten untuk media sosial",
         ],
         whatsappLink:
-          "https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20paket%20Pembuatan%20Bisnis%20Online.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut?",
+          "https://wa.me/6285156779923?text=Halo,%20saya%20mau%20paket%20Bisnis%20Online.%20Bisa%20jelasin%20lebih%20lanjut?",
       },
       {
         name: "Website",
         price: "Rp25.000",
-        description: "Sempurna untuk bisnis yang siap membangun website profesional dan kehadiran digital",
+        description: "Buat website keren untuk bisnis Anda, siap digunakan.",
         features: [
-          "Website e-commerce",
+          "Website toko online",
           "Website portofolio",
-          "Landing page",
-          "Website keanggotaan/komunitas",
-          "Domain gratis + hosting tak terbatas",
+          "Halaman promosi",
+          "Website komunitas",
+          "Domain gratis + hosting tanpa batas",
         ],
         whatsappLink:
-          "https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20paket%20Website.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut?",
+          "https://wa.me/6285156779923?text=Halo,%20saya%20mau%20paket%20Website.%20Bisa%20jelasin%20lebih%20lanjut?",
       },
       {
-        name: "Gabung Reseller",
+        name: "Jadi Reseller",
         price: "Gratis",
-        description: "Untuk bisnis yang siap berkembang tanpa biaya awal.",
+        description: "Mulai bisnis tanpa modal, kami bantu sampai dapat pelanggan.",
         features: [
           "Semua fitur di paket Website",
-          "Dukungan penuh hingga Anda mendapatkan pelanggan pertama",
-          "Integrasi program reseller (Gratis)",
-          "Akses ke sumber daya dan alat pemasaran eksklusif",
+          "Bantuan sampai dapat pelanggan pertama",
+          "Program reseller gratis",
+          "Akses alat promosi khusus",
         ],
         whatsappLink:
-          "https://wa.me/6285156779923?text=Halo,%20saya%20tertarik%20dengan%20paket%20Gabung%20Reseller.%20Bisakah%20Anda%20memberikan%20informasi%20lebih%20lanjut?",
+          "https://wa.me/6285156779923?text=Halo,%20saya%20mau%20paket%20Jadi%20Reseller.%20Bisa%20jelasin%20lebih%20lanjut?",
       },
     ],
     []
@@ -136,11 +135,11 @@ const Home = () => {
       <section id="home" className="min-h-screen flex items-center relative z-10 pt-32 pb-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Kami Membuat <br />
-            <span className="text-gray-400">Anda Meluncurkan dan Menghasilkan</span>
+            Kami Bantu <br />
+            <span className="text-gray-400">Anda Mulai dan Untung</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
-            Siap meluncurkan bisnis Anda? Dengan layanan pengaturan lengkap kami, Anda bisa fokus pada pertumbuhan sementara kami menangani pekerjaan sulit.
+            Mau punya bisnis sendiri? Kami siapkan semua, Anda tinggal jualan dan kembangkan!
           </p>
           <div className="flex justify-center gap-4 mb-12">
             <button
@@ -165,7 +164,7 @@ const Home = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Pilih Paket Anda</h2>
             <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-              Harga Jelas, Hasil Besar. Dapatkan semua yang Anda butuhkan, dengan harga yang tepat.
+              Harga terjangkau, hasil maksimal. Pilih yang sesuai kebutuhan Anda.
             </p>
             <PricingCard activePkg={activePkg} setActivePackage={setActivePackage} activePackage={activePackage} />
           </motion.div>
